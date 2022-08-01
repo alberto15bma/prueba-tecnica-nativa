@@ -24,11 +24,6 @@ const PokemonProvider = ({ children }) => {
     useEffect(() => {
       setNumeroPagina();
     }, [next]);
-   /* useEffect(() => {
-      getPokemonslocal();
-    },[]); */
-
-    const arrayColores = ["color1", "color2", "color3", "color4"];
 
     const cargarPokemons = async (url) => {
       setCargando(true);
@@ -52,7 +47,6 @@ const PokemonProvider = ({ children }) => {
       } catch (error) {}
       finally {
         setCargando(false);
-        //setPokemonLocal(await getPokemonslocal());
       }
     };
     const cargarPokemonsFiltro = async () => {
@@ -242,7 +236,6 @@ const PokemonProvider = ({ children }) => {
     previousPokemons,
     previous,
     next,
-    arrayColores,
     buscarPokemon,
     busqueda,
     setBusqueda,

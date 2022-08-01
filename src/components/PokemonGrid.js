@@ -1,5 +1,5 @@
-import { useContext, useEffect } from "react";
-import { Alert, FlatList, Image, StyleSheet, Text, TouchableWithoutFeedback, View } from "react-native";
+import { useContext } from "react";
+import { FlatList, Image, StyleSheet, Text, TouchableWithoutFeedback, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import PokemonContext from "../context/PokemonContext";
 import Loading from "./Loading";

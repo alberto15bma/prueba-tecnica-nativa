@@ -1,12 +1,9 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AntDesign } from "@expo/vector-icons"; 
 import {
-  FlatList,
-  Image,
   StyleSheet,
   Text,
   TouchableOpacity,
-  TouchableWithoutFeedback,
   View,
 } from "react-native";
 import PokemonContext from "../context/PokemonContext";

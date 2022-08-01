@@ -1,11 +1,11 @@
 import { useContext, useEffect } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import PaginacionPokemon from "../components/PaginacionPokemon";
 import PokemonGrid from "../components/PokemonGrid";
 import PokemonContext from "../context/PokemonContext";
 
 export default function Principal({ navigation }) {
-  const { setBusqueda , filtraPokemon} = useContext(PokemonContext);
+  const { filtraPokemon} = useContext(PokemonContext);
     useEffect(() => {
       navigation.setOptions({
         headerLargeTitle: true,
@@ -24,15 +24,6 @@ export default function Principal({ navigation }) {
         },
       });
     }, [navigation]);
-   /* const HeaderNav = () => {
-      return (
-        <View style={styles.headerRight}>
-          <TouchableWithoutFeedback>
-            <EvilIcons name="search" size={35} color="white" />
-          </TouchableWithoutFeedback>
-        </View>
-      );
-    }; */
   return (
     <View style={styles.container}>
       <PokemonGrid />

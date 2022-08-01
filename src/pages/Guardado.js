@@ -6,8 +6,7 @@ import {
   TouchableWithoutFeedback,
   Image,
   StyleSheet,
-  TouchableOpacity,
-} from "react-native";
+  } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Loading from "../components/Loading";
 import PokemonContext from "../context/PokemonContext";
