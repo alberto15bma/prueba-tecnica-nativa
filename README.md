@@ -17,6 +17,3 @@
     - host: "https://pokeapi.co/api/v2/pokemon", // DIRECCION DEL SERVIDOR
     - puerto: "", // PUERTO DEL SERVIDOR EN EL CASO QUE LO TENGA
   - Ejecutar el proyecto con "npm start"
-
-*Se agrega pasos test del proyecto*
-  - Ejecutar el proyecto con "npm test"
